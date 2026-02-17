@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ILBE — Ibadan Live Branding Event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">ILBE</a>
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#details">Info</a>
+      </div>
+      <a href="#register" class="nav__cta">Register</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ MAIN GRID ═══════════════════ -->
+  <main class="bento-grid">
+
+    <!-- Hero Block -->
+    <div class="bento-card hero-card reveal">
+      <div class="hero-content">
+        <span class="pill">Event 2026</span>
+        <h1>Building Kingdom Brands for Global Impact.</h1>
+        <p>Join 500+ founders for a branding masterclass.</p>
+        <div class="hero-actions">
+          <a href="#register" class="btn btn--white">Secure Seat</a>
+          <span class="tag">Free Entry</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Date Block -->
+    <div class="bento-card Date-card reveal delay-1">
+      <div class="card-icon">📅</div>
+      <h3>May 16, 2026</h3>
+      <p>Saturday</p>
+    </div>
+
+    <!-- Location Block -->
+    <div class="bento-card location-card reveal delay-2">
+      <div class="card-icon">📍</div>
+      <h3>Ibadan</h3>
+      <p>Intl. Conf. Centre, UI</p>
+    </div>
+
+    <!-- Why Block (Large) -->
+    <div class="bento-card why-card reveal">
+      <h2>Why Attend?</h2>
+      <ul class="check-list">
+        <li><span>✨</span> Gain Brand Clarity</li>
+        <li><span>✝️</span> Faith & Excellence</li>
+        <li><span>🚀</span> Converting Strategy</li>
+        <li><span>🤝</span> Kingdom Network</li>
+      </ul>
+    </div>
+
+    <!-- Stats Block -->
+    <div class="bento-card stats-card reveal delay-1">
+      <div class="stat">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">Founders</span>
+      </div>
+    </div>
+
+    <!-- Who Block -->
+    <div class="bento-card who-card reveal delay-2">
+      <h2>Who is this for?</h2>
+      <div class="tags">
+        <span>CEOs</span>
+        <span>Founders</span>
+        <span>Creatives</span>
+        <span>Pastors</span>
+        <span>Students</span>
+      </div>
+    </div>
+
+    <!-- Expectations Scroller -->
+    <div class="bento-card expect-card reveal">
+      <h2>What to Expect</h2>
+      <div class="expect-scroller">
+        <div class="expect-item">Keynotes</div>
+        <div class="expect-item">Workshops</div>
+        <div class="expect-item">Panels</div>
+        <div class="expect-item">Networking</div>
+      </div>
+    </div>
+
+    <!-- Register Block (Large) -->
+    <div class="bento-card register-card reveal" id="register">
+      <div class="split-reg">
+        <div class="reg-text">
+          <h2>Secure Your<br>Spot Now.</h2>
+          <p>It's completely free. Don't miss out.</p>
+        </div>
+        <form class="reg-form" id="registerForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <select required>
+            <option value="" disabled selected>Role</option>
+            <option>Founder</option>
+            <option>Creative</option>
+            <option>Other</option>
+          </select>
+          <button type="submit" class="btn btn--black">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Block -->
+    <div class="bento-card footer-card reveal">
+      <p>&copy; 2026 ILBE.</p>
+      <div class="socials">
+        <a href="#">Inst</a>
+        <a href="#">Tw</a>
+        <a href="#">Li</a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

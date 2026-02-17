@@ -1,0 +1,473 @@
+/* ═══════════════════════════════════════════════
+   VARIATION F — BENTO GRID / MASONRY
+   Modular, structured, Apple-style grid layout
+   ═══════════════════════════════════════════════ */
+
+:root {
+  --bg: #f5f5f7;
+  --card-bg: #ffffff;
+  --text: #1d1d1f;
+  --text-muted: #86868b;
+  --accent: #0071e3;
+  --radius: 24px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 2rem;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ═══════════════════ NAV ═══════════════════ */
+.nav {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.nav__container {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav__logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: 0.2s;
+}
+
+.nav__links a:hover {
+  color: var(--text);
+}
+
+.nav__cta {
+  background: var(--text);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav__cta:hover {
+  transform: scale(1.05);
+}
+
+/* ═══════════════════ BENTO GRID ═══════════════════ */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 5rem auto 0;
+}
+
+.bento-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Specific Cards */
+.hero-card {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: #1d1d1f;
+  color: #fff;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn--white {
+  background: #fff;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn--white:hover {
+  transform: scale(1.05);
+}
+
+.tag {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.Date-card {
+  grid-column: span 1;
+  background: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-card {
+  grid-column: span 1;
+  background: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bento-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bento-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.why-card {
+  grid-column: span 2;
+}
+
+.why-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.check-list li {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+.check-list li span {
+  background: #f5f5f7;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+
+.stats-card {
+  grid-column: span 1;
+  background: #0071e3;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-num {
+  font-size: 3rem;
+  font-weight: 800;
+  display: block;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.who-card {
+  grid-column: span 1;
+  background: #fff;
+}
+
+.who-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags span {
+  background: #f5f5f7;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.expect-card {
+  grid-column: span 1;
+  overflow: hidden;
+  padding: 0;
+}
+
+.expect-card h2 {
+  padding: 2rem 2rem 1rem;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.expect-scroller {
+  display: flex;
+  flex-direction: column;
+}
+
+.expect-item {
+  padding: 1rem 2rem;
+  border-top: 1px solid #f5f5f7;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.expect-item:hover {
+  background: #f5f5f7;
+  padding-left: 2.5rem;
+}
+
+.register-card {
+  grid-column: span 2;
+  background: #f5f5f7;
+}
+
+.split-reg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  justify-content: center;
+}
+
+.register-card h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.reg-form input,
+.reg-form select {
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: var(--font);
+  outline: none;
+  transition: 0.2s;
+}
+
+.reg-form input:focus {
+  border-color: #0071e3;
+}
+
+.btn--black {
+  background: #1d1d1f;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn--black:hover {
+  transform: scale(1.02);
+}
+
+.footer-card {
+  grid-column: span 1;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.footer-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.socials a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+/* ═══════════════════ REVEAL ═══════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+/* ═══════════════════ RESPONSIVE ═══════════════════ */
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 6rem;
+  }
+
+  .nav {
+    top: auto;
+    bottom: 1rem;
+    width: auto;
+  }
+
+  /* Bottom nav for mobile */
+  body {
+    padding: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  .expect-card {
+    grid-column: span 2;
+  }
+
+  .footer-card {
+    grid-column: span 2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card,
+  .why-card,
+  .register-card,
+  .expect-card,
+  .footer-card {
+    grid-column: span 1;
+  }
+
+  .Date-card,
+  .location-card,
+  .stats-card,
+  .who-card {
+    grid-column: span 1;
+  }
+}
