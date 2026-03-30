@@ -4,216 +4,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ILBE — Ibadan Live Branding Event</title>
+  <title>ILBE | Ibadan Live Branding Event</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-  <!-- ═══════════════════ NAV ═══════════════════ -->
   <nav class="nav" id="nav">
-    <a href="#" class="nav__logo">ILBE</a>
+    <a href="#hero" class="nav__logo" aria-label="Ibadan Live Branding Event home">
+      <img src="assets/ilbe-lockup-black.png" alt="Ibadan Live Branding Event logo" />
+    </a>
     <div class="nav__links" id="navLinks">
-      <a href="#why">Why?</a>
+      <a href="#why">Why Attend</a>
       <a href="#details">Details</a>
-      <a href="#who">Who?</a>
-      <a href="#expect">Expect</a>
-      <a href="#register" class="nav__cta">Join Now</a>
-      <button class="nav__close" id="navClose">✕</button>
+      <a href="#who">Who It's For</a>
+      <a href="#expect">What To Expect</a>
+      <a href="https://forms.gle/zM6vvySTr9NiGBkB6" class="nav__cta" target="_blank" rel="noreferrer">Register
+        Now</a>
+      <button class="nav__close" id="navClose" aria-label="Close navigation">Close</button>
     </div>
-    <button class="nav__toggle" id="navToggle">Menu</button>
+    <button class="nav__toggle" id="navToggle" aria-label="Open navigation">Menu</button>
   </nav>
 
-  <!-- ═══════════════════ HERO ═══════════════════ -->
   <header class="hero" id="hero">
+    <div class="hero__backdrop" aria-hidden="true"></div>
     <div class="container hero__grid">
       <div class="hero__content reveal">
-        <div class="hero__label">Conf. 2026</div>
-        <h1 class="hero__title">
-          BUILDING<br />KINGDOM<br />BRANDS.
-        </h1>
+        <div class="hero__label">Saturday, May 16th 2026</div>
+        <h1 class="hero__title">Building Kingdom Brands for Global Impact</h1>
         <p class="hero__sub">
-          Join 500+ founders, CEOs & creatives for a brutal, honest branding experience. Clarity. Strategy. Kingdom
-          Principles.
+          Join the Ibadan Live Branding Event for a focused day of brand clarity, positioning, and practical insight
+          for founders, leaders, creatives, and culture-shaping builders.
         </p>
         <div class="hero__actions">
-          <a href="#register" class="btn btn--primary">Get Your Ticket</a>
-          <span class="hero__note">It's 100% Free. Really.</span>
+          <a href="https://forms.gle/zM6vvySTr9NiGBkB6" class="btn btn--primary" target="_blank"
+            rel="noreferrer">Register Now</a>
+          <p class="hero__note">Registration is free and completed through the official ILBE form.</p>
         </div>
       </div>
       <div class="hero__visual reveal delay-1">
-        <div class="visual-box">
-          <span>GLOBAL<br />IMPACT</span>
+        <div class="hero-panel">
+          <div class="hero-panel__symbol">
+            <img src="assets/ilbe-symbol-red.png" alt="Ibadan Live Branding Event symbol" />
+          </div>
+          <div class="hero-panel__body">
+            <p class="hero-panel__eyebrow">Ibadan Live Branding Event</p>
+            <h2 class="hero-panel__headline">A live experience for vision-led brands that want to grow with clarity.</h2>
+            <p class="hero-panel__copy">
+              The flyer direction stays intact here: warm, confident, structured, and centered on a single conversion
+              path.
+            </p>
+          </div>
+          <div class="hero-panel__meta">
+            <div>
+              <span>Date</span>
+              <strong>Saturday, May 16th 2026</strong>
+            </div>
+            <div>
+              <span>Time</span>
+              <strong>9 AM</strong>
+            </div>
+            <div>
+              <span>Venue</span>
+              <strong>International Conference Centre, University of Ibadan</strong>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="marquee-strip">
-      <div class="track">
-        <span>May 16, 2026 — Ibadan</span>
-        <span class="star">★</span>
-        <span>Free Entry</span>
-        <span class="star">★</span>
-        <span>Reg Required</span>
-        <span class="star">★</span>
-        <span>May 16, 2026 — Ibadan</span>
-        <span class="star">★</span>
-        <span>Free Entry</span>
-        <span class="star">★</span>
-        <span>Reg Required</span>
-        <span class="star">★</span>
+    <div class="hero-facts">
+      <div class="container hero-facts__grid">
+        <div class="hero-fact">
+          <span>Date</span>
+          <strong>Saturday, May 16th 2026</strong>
+        </div>
+        <div class="hero-fact">
+          <span>Time</span>
+          <strong>9 AM</strong>
+        </div>
+        <div class="hero-fact">
+          <span>Venue</span>
+          <strong>International Conference Centre, University of Ibadan</strong>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- ═══════════════════ WHY ATTEND ═══════════════════ -->
   <section class="section" id="why">
     <div class="container">
-      <h2 class="section-title reveal">WHY YOU<br />SHOULD COME</h2>
+      <h2 class="section-title reveal">Why Attend</h2>
+      <p class="section-intro reveal">
+        The event promise is straightforward: sharper messaging, stronger positioning, and a more disciplined brand
+        presence.
+      </p>
       <div class="grid-3">
-        <div class="card reveal">
+        <article class="card reveal">
           <div class="card__head">01</div>
           <h3>Brand Clarity</h3>
-          <p>Stop guessing. Get clear on your identity and message.</p>
-        </div>
-        <div class="card reveal delay-1">
+          <p>Clarify what your brand stands for, how it should sound, and where it should lead.</p>
+        </article>
+        <article class="card reveal delay-1">
           <div class="card__head">02</div>
-          <h3>Faith & Excellence</h3>
-          <p>Build a brand rooted in purpose that actually lasts.</p>
-        </div>
-        <div class="card reveal delay-2">
+          <h3>Strategic Positioning</h3>
+          <p>Learn how to shape perception, trust, and differentiation in a crowded market.</p>
+        </article>
+        <article class="card reveal delay-2">
           <div class="card__head">03</div>
-          <h3>Storytelling</h3>
-          <p>Learn strategies that connect, convert, and win hearts.</p>
-        </div>
-        <div class="card reveal">
+          <h3>Global Relevance</h3>
+          <p>Build with local conviction while preparing your message and standards for wider reach.</p>
+        </article>
+        <article class="card reveal">
           <div class="card__head">04</div>
-          <h3>Network</h3>
-          <p>Meet Kingdom-minded entrepreneurs who get it.</p>
-        </div>
-        <div class="card reveal delay-1 card--highlight">
+          <h3>Practical Insight</h3>
+          <p>Expect sessions that move beyond inspiration into usable brand thinking and execution.</p>
+        </article>
+        <article class="card card--highlight reveal delay-1">
           <div class="card__head">05</div>
-          <h3>Divine Purpose</h3>
-          <p>Realign your business with God's plan. Worship & mentorship.</p>
-        </div>
+          <h3>Kingdom Impact</h3>
+          <p>Explore how vision, service, and excellence can shape brands that endure and influence culture.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ DETAILS ═══════════════════ -->
   <section class="section section--light" id="details">
     <div class="container">
-      <h2 class="section-title reveal">THE DETAILS</h2>
+      <h2 class="section-title reveal">Event Details</h2>
+      <p class="section-intro reveal">
+        Everything important is kept visible and easy to scan, with no registration friction inside the page itself.
+      </p>
       <div class="details-box reveal">
         <div class="d-row">
           <span class="d-label">Date</span>
-          <span class="d-val">Saturday, May 16, 2026</span>
-        </div>
-        <div class="d-row">
-          <span class="d-label">Location</span>
-          <span class="d-val">Intl. Conference Centre, UI</span>
+          <span class="d-val">Saturday, May 16th 2026</span>
         </div>
         <div class="d-row">
           <span class="d-label">Time</span>
-          <span class="d-val">One-Day Event</span>
+          <span class="d-val">9 AM</span>
         </div>
         <div class="d-row">
-          <span class="d-label">Cost</span>
-          <span class="d-val">Free (Must Register)</span>
+          <span class="d-label">Venue</span>
+          <span class="d-val">International Conference Centre, University of Ibadan</span>
+        </div>
+        <div class="d-row">
+          <span class="d-label">Entry</span>
+          <span class="d-val">Free, with registration required</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ WHO IS THIS FOR ═══════════════════ -->
   <section class="section" id="who">
     <div class="container">
       <div class="split-layout">
         <div class="split-left reveal">
-          <h2 class="section-title">WHO IS THIS FOR?</h2>
-          <p class="big-p">If you want to build a brand that honors God and impacts society, get in here.</p>
+          <h2 class="section-title">Who It's For</h2>
+          <p class="big-p">
+            This page is built for the same audience the flyer speaks to: leaders, founders, creatives, and vision-led
+            builders who want to communicate with more precision and confidence.
+          </p>
         </div>
         <div class="split-right reveal delay-1">
           <ul class="check-list">
-            <li>Business Owners & CEOs</li>
-            <li>Startup Founders</li>
-            <li>Strategists & Designers</li>
-            <li>Church Leaders</li>
-            <li>Students & Dreamers</li>
+            <li>Founders and CEOs</li>
+            <li>Business owners and operators</li>
+            <li>Brand strategists and designers</li>
+            <li>Ministry and community leaders</li>
+            <li>Students and emerging builders</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ EXPECT ═══════════════════ -->
   <section class="section section--vibrant" id="expect">
     <div class="container">
-      <h2 class="section-title reveal">THE MENU</h2>
+      <h2 class="section-title reveal">What To Expect</h2>
+      <p class="section-intro reveal">
+        Expect a clean event experience built around teaching, conversation, and real brand application.
+      </p>
       <div class="menu-grid">
-        <div class="menu-item reveal">
-          <span class="m-icon">🎤</span>
-          <h3>Keynotes</h3>
-        </div>
-        <div class="menu-item reveal delay-1">
-          <span class="m-icon">🛠</span>
-          <h3>Workshops</h3>
-        </div>
-        <div class="menu-item reveal delay-2">
-          <span class="m-icon">💬</span>
-          <h3>Panels</h3>
-        </div>
-        <div class="menu-item reveal delay-3">
-          <span class="m-icon">🤝</span>
-          <h3>Networking</h3>
-        </div>
+        <article class="menu-item reveal">
+          <span class="m-icon">01</span>
+          <h3>Keynote Sessions</h3>
+          <p>Clear, high-level direction on brand vision, leadership, and relevance.</p>
+        </article>
+        <article class="menu-item reveal delay-1">
+          <span class="m-icon">02</span>
+          <h3>Brand Conversations</h3>
+          <p>Honest discussions on how strong brands communicate and hold attention.</p>
+        </article>
+        <article class="menu-item reveal delay-2">
+          <span class="m-icon">03</span>
+          <h3>Practical Teaching</h3>
+          <p>Actionable insight you can carry back into your business, team, or platform.</p>
+        </article>
+        <article class="menu-item reveal delay-3">
+          <span class="m-icon">04</span>
+          <h3>Meaningful Networking</h3>
+          <p>Room to connect with builders, leaders, and peers who take brand seriously.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ REGISTER ═══════════════════ -->
   <section class="section" id="register">
     <div class="container">
       <div class="reg-box reveal">
-        <h2 class="reg-title">SECURE YOUR SEAT</h2>
-        <p class="reg-sub">It's free. Don't sleep on this.</p>
-
-        <form class="reg-form" id="registerForm">
-          <div class="input-group">
-            <label>Name</label>
-            <input type="text" required placeholder="Your full name">
-          </div>
-          <div class="input-group">
-            <label>Email</label>
-            <input type="email" required placeholder="you@example.com">
-          </div>
-          <div class="input-group">
-            <label>Role</label>
-            <select required>
-              <option value="" disabled selected>Select one...</option>
-              <option>Founder / CEO</option>
-              <option>Creative</option>
-              <option>Student</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="checkbox-group">
-            <input type="checkbox" required id="consent">
-            <label for="consent">I agree to receive updates.</label>
-          </div>
-          <button type="submit" class="btn btn--block">REGISTER NOW</button>
-        </form>
+        <div class="reg-box__content">
+          <p class="reg-kicker">Official Registration</p>
+          <h2 class="reg-title">Reserve your place at ILBE 2026</h2>
+          <p class="reg-sub">
+            Registration is handled through the official Google Form. Use the button below to complete your event
+            registration.
+          </p>
+        </div>
+        <div class="reg-box__actions">
+          <a href="https://forms.gle/zM6vvySTr9NiGBkB6" class="btn btn--primary btn--block" target="_blank"
+            rel="noreferrer">Register Now</a>
+          <a href="https://forms.gle/zM6vvySTr9NiGBkB6" class="reg-link" target="_blank" rel="noreferrer">Open the
+            official form in a new tab</a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>ILBE 2026. All Rights Reserved.</p>
+    <div class="container footer__content">
+      <img src="assets/ilbe-symbol-red.png" alt="Ibadan Live Branding Event symbol" class="footer__logo" />
+      <p>Ibadan Live Branding Event 2026</p>
+      <a href="https://forms.gle/zM6vvySTr9NiGBkB6" target="_blank" rel="noreferrer">Register here</a>
     </div>
   </footer>
 
