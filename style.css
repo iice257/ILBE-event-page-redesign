@@ -219,9 +219,9 @@ h3 {
 
 .hero__actions {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .btn {
@@ -276,7 +276,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   font-weight: 800;
-  color: var(--accent);
+  color: var(--text);
   opacity: 0.8;
   margin-top: auto;
   margin-bottom: 0.5rem;
@@ -636,8 +636,14 @@ h3 {
     right: 1rem;
   }
 
+  .hero {
+    padding-top: 5rem;
+  }
+
   .hero__grid {
     grid-template-columns: 1fr;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
   }
 
   .visual-box {
