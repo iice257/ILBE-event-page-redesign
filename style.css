@@ -10,7 +10,7 @@
   --accent: #B00000;
   --accent-secondary: #FF8F00;
   --accent-tertiary: #244F02;
-  
+
   --border-color: #0A0A0A;
   --shadow-color: #0A0A0A;
 
@@ -174,8 +174,8 @@ h3 {
   z-index: 0;
 }
 
-.hero > .container,
-.hero > .marquee-strip {
+.hero>.container,
+.hero>.marquee-strip {
   position: relative;
   z-index: 1;
 }
@@ -196,7 +196,7 @@ h3 {
   font-weight: 700;
   padding: 0.2rem 0.6rem;
   margin-bottom: 1rem;
-  transform: rotate(-2deg);
+  margin-top: 2rem;
 }
 
 .hero__title {
@@ -262,7 +262,6 @@ h3 {
   justify-content: center;
   border: var(--border);
   box-shadow: var(--shadow);
-  transform: rotate(3deg);
   font-family: var(--font-display);
   font-size: 3rem;
   text-align: center;
@@ -290,12 +289,19 @@ h3 {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
