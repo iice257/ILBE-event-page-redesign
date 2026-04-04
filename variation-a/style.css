@@ -176,7 +176,7 @@ img { max-width: 100%; display: block; }
 }
 .hero__title {
   font-family: var(--serif);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(3rem, 10vw, 6rem);
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1.5rem;
@@ -568,6 +568,7 @@ img { max-width: 100%; display: block; }
   .nav__links.open { right: 0; }
   .nav__toggle { display: flex; }
 
+  .hero { min-height: 100svh; padding-top: 5rem; padding-bottom: 3rem; }
   .hero__content { padding: 2rem 1.5rem; }
   .hero__free { border-left: none; padding-left: 0; }
   .hero__actions { flex-direction: column; }
